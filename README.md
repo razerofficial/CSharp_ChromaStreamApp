@@ -72,13 +72,17 @@ ChromaAnimationAPI.CoreStreamBroadcastEnd();
 ### Screenshots
 
 * **Synapse 3 and the Chroma Connect Module are required**
+
 ![image_1](images/image_1.png)
 
 * **Use the shortcode to authorize a stream source**
+
 ![image_2](images/image_2.png)
 
 * **Authorize the shortcode on the Razer Streaming Portal**
+
 ![image_3](images/image_3.png)
 
 * **Broadcast to the authorized stream**
+
 ![image_4](images/image_4.png)
