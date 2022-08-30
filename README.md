@@ -14,7 +14,8 @@ Step 2. Get and copy the shortcode
 _mShortcode = ChromaSDK.Stream.Default.Shortcode;
 _mLenShortcode = 0;
 string strPlatform = "PC";
-ChromaAnimationAPI.CoreStreamGetAuthShortcode(ref _mShortcode, out _mLenShortcode, strPlatform, "C# Chroma Stream App");
+ChromaAnimationAPI.CoreStreamGetAuthShortcode(ref _mShortcode, out _mLenShortcode,
+  strPlatform, "C# Chroma Stream App");
 ```
 
 Step 3. Check for stream id authorization every 1 second
