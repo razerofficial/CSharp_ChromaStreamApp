@@ -1,6 +1,42 @@
+# Latest
+
+* Visit the [Chroma Animation Guide](https://chroma.razer.com/ChromaGuide/) to find the latest supported plugin for Chroma RGB.
+
 # CSharp_ChromaStreamApp
 
 C# Chroma Stream App for Chroma RGB streaming.
+
+---
+
+**Table of Contents**
+
+* [See Also](#see-also)
+* [Steps](#steps)
+* [Screenshots](#screenshots)
+
+---
+
+<a name="see-also"></a>
+
+## See Also
+
+**Docs:**
+
+* [Chroma Animation Guide](http://chroma.razer.com/ChromaGuide/) - Visual examples of the Chroma Animation API methods
+
+**Plugins:**
+
+* [CChromaEditor](https://github.com/RazerOfficial/CChromaEditor) - C++ library for playing and editing Chroma animations
+
+**Notes**
+
+* For more information about streaming Chroma RGB check out the [streaming section](https://github.com/razerofficial/CChromaEditor#streaming) of the C++ plugin.
+
+---
+
+<a name="steps"></a>
+
+## Steps
 
 Step 1. Check for streaming support
 
@@ -69,6 +105,10 @@ Step 7. End the broadcast
 ```
 ChromaAnimationAPI.CoreStreamBroadcastEnd();
 ```
+
+---
+
+<a name="screenshots"></a>
 
 ### Screenshots
 
