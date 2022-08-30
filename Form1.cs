@@ -132,7 +132,7 @@ namespace CSharp_ChromaStreamApp
                 }
 
                 if (_mStatus == ChromaSDK.Stream.StreamStatusType.BROADCASTING ||
-                    _mTxtStreamId.Text.Length > 0 && _mTxtStreamKey.Text.Length > 0)
+                    (_mTxtStreamId.Text.Length > 0 && _mTxtStreamKey.Text.Length > 0))
                 {
                     _mChkBroadcast.Enabled = true;
                 }
