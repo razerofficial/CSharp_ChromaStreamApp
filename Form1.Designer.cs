@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
-            this._mBtnGetStreamCode = new System.Windows.Forms.Button();
-            this._mTxtShortCode = new System.Windows.Forms.Label();
+            this._mBtnGetShortcode = new System.Windows.Forms.Button();
+            this._mTxtShortcode = new System.Windows.Forms.Label();
             this._mBtnCopy = new System.Windows.Forms.Button();
             this._mLink = new System.Windows.Forms.LinkLabel();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,11 +40,11 @@
             this._mTxtStreamKey = new System.Windows.Forms.TextBox();
             this._mChkBroadcast = new System.Windows.Forms.CheckBox();
             this._mPanelBroadcast = new System.Windows.Forms.Panel();
+            this._mTxtStatus = new System.Windows.Forms.Label();
             this._mPanelNotSupported = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this._mLinkSynapse = new System.Windows.Forms.LinkLabel();
             this._mTimerForm = new System.Windows.Forms.Timer(this.components);
-            this._mTxtStatus = new System.Windows.Forms.Label();
             this._mPanelBroadcast.SuspendLayout();
             this._mPanelNotSupported.SuspendLayout();
             this.SuspendLayout();
@@ -59,27 +59,28 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Authorize Stream Source";
             // 
-            // _mBtnGetStreamCode
+            // _mBtnGetShortcode
             // 
-            this._mBtnGetStreamCode.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._mBtnGetStreamCode.Location = new System.Drawing.Point(15, 38);
-            this._mBtnGetStreamCode.Name = "_mBtnGetStreamCode";
-            this._mBtnGetStreamCode.Size = new System.Drawing.Size(136, 53);
-            this._mBtnGetStreamCode.TabIndex = 1;
-            this._mBtnGetStreamCode.Text = "Get Stream Code";
-            this._mBtnGetStreamCode.UseVisualStyleBackColor = true;
-            this._mBtnGetStreamCode.Click += new System.EventHandler(this._mBtnGetStreamCode_Click);
+            this._mBtnGetShortcode.Enabled = false;
+            this._mBtnGetShortcode.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._mBtnGetShortcode.Location = new System.Drawing.Point(15, 38);
+            this._mBtnGetShortcode.Name = "_mBtnGetShortcode";
+            this._mBtnGetShortcode.Size = new System.Drawing.Size(136, 53);
+            this._mBtnGetShortcode.TabIndex = 1;
+            this._mBtnGetShortcode.Text = "Get Shortcode";
+            this._mBtnGetShortcode.UseVisualStyleBackColor = true;
+            this._mBtnGetShortcode.Click += new System.EventHandler(this._mBtnGetStreamCode_Click);
             // 
-            // _mTxtShortCode
+            // _mTxtShortcode
             // 
-            this._mTxtShortCode.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this._mTxtShortCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this._mTxtShortCode.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._mTxtShortCode.Location = new System.Drawing.Point(157, 38);
-            this._mTxtShortCode.Name = "_mTxtShortCode";
-            this._mTxtShortCode.Size = new System.Drawing.Size(116, 53);
-            this._mTxtShortCode.TabIndex = 2;
-            this._mTxtShortCode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this._mTxtShortcode.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this._mTxtShortcode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this._mTxtShortcode.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._mTxtShortcode.Location = new System.Drawing.Point(157, 38);
+            this._mTxtShortcode.Name = "_mTxtShortcode";
+            this._mTxtShortcode.Size = new System.Drawing.Size(116, 53);
+            this._mTxtShortcode.TabIndex = 2;
+            this._mTxtShortcode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // _mBtnCopy
             // 
@@ -160,11 +161,11 @@
             // _mPanelBroadcast
             // 
             this._mPanelBroadcast.Controls.Add(this._mTxtStatus);
-            this._mPanelBroadcast.Controls.Add(this._mBtnGetStreamCode);
+            this._mPanelBroadcast.Controls.Add(this._mBtnGetShortcode);
             this._mPanelBroadcast.Controls.Add(this._mChkBroadcast);
             this._mPanelBroadcast.Controls.Add(this.label1);
             this._mPanelBroadcast.Controls.Add(this._mTxtStreamKey);
-            this._mPanelBroadcast.Controls.Add(this._mTxtShortCode);
+            this._mPanelBroadcast.Controls.Add(this._mTxtShortcode);
             this._mPanelBroadcast.Controls.Add(this._mTxtStreamId);
             this._mPanelBroadcast.Controls.Add(this._mBtnCopy);
             this._mPanelBroadcast.Controls.Add(this.label4);
@@ -174,6 +175,15 @@
             this._mPanelBroadcast.Name = "_mPanelBroadcast";
             this._mPanelBroadcast.Size = new System.Drawing.Size(641, 242);
             this._mPanelBroadcast.TabIndex = 10;
+            // 
+            // _mTxtStatus
+            // 
+            this._mTxtStatus.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._mTxtStatus.Location = new System.Drawing.Point(275, 186);
+            this._mTxtStatus.Name = "_mTxtStatus";
+            this._mTxtStatus.Size = new System.Drawing.Size(360, 47);
+            this._mTxtStatus.TabIndex = 10;
+            this._mTxtStatus.Text = "Status:";
             // 
             // _mPanelNotSupported
             // 
@@ -210,15 +220,6 @@
             // 
             this._mTimerForm.Interval = 1000;
             // 
-            // _mTxtStatus
-            // 
-            this._mTxtStatus.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._mTxtStatus.Location = new System.Drawing.Point(275, 186);
-            this._mTxtStatus.Name = "_mTxtStatus";
-            this._mTxtStatus.Size = new System.Drawing.Size(360, 47);
-            this._mTxtStatus.TabIndex = 10;
-            this._mTxtStatus.Text = "Status:";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -239,8 +240,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button _mBtnGetStreamCode;
-        private System.Windows.Forms.Label _mTxtShortCode;
+        private System.Windows.Forms.Button _mBtnGetShortcode;
+        private System.Windows.Forms.Label _mTxtShortcode;
         private System.Windows.Forms.Button _mBtnCopy;
         private System.Windows.Forms.LinkLabel _mLink;
         private System.Windows.Forms.Label label3;
