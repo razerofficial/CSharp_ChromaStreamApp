@@ -79,7 +79,7 @@ ChromaAnimationAPI.CoreStreamBroadcastEnd();
 
 ![image_2](images/image_2.png)
 
-* **Authorize the shortcode on the Razer Streaming Portal**
+* **Authorize the shortcode on the [Razer Streaming Portal](https://stream.razer.com/)**
 
 ![image_3](images/image_3.png)
 
